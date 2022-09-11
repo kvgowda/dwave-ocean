@@ -8,3 +8,13 @@ response = sampler.sample_qubo(Q)
 #print (response)
 for datum in response.data(['sample', 'energy']):   
   print(datum.sample, "Energy: ", datum.energy)
+
+# Output
+#{'x': 1, 'y': 1, 'z': 0} Energy:  -3.0
+#{'x': 0, 'y': 1, 'z': 1} Energy:  -3.0
+#{'x': 1, 'y': 0, 'z': 1} Energy:  -3.0
+#{'x': 0, 'y': 0, 'z': 1} Energy:  -3.0
+#{'x': 1, 'y': 0, 'z': 0} Energy:  -2.0
+#{'x': 0, 'y': 1, 'z': 0} Energy:  -2.0
+#{'x': 1, 'y': 1, 'z': 1} Energy:  -2.0
+#{'x': 0, 'y': 0, 'z': 0} Energy:  0.0
